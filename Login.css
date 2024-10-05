@@ -1,0 +1,91 @@
+.login-container {
+  width: 350px; /* Fixed width for larger screens */
+  margin: 100px auto; /* Centering the container with top margin */
+  padding: 30px;
+  background-color: #ffffff; /* White background for cleanliness */
+  border: 1px solid #e0e0e0; /* Softer border color for a subtle look */
+  border-radius: 15px; /* Slightly increased border radius for smoother corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for more depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 28px; /* Increased font size for better visibility */
+  color: #444; /* Darker text for improved contrast */
+  margin-bottom: 20px;
+  font-weight: 600; /* Bold weight for emphasis */
+}
+
+input, button {
+  width: 100%; /* Full width for inputs and buttons */
+  padding: 14px; /* Increased padding for comfort */
+  margin: 15px 0;
+  border-radius: 8px; /* Increased border radius for consistency */
+  border: 1px solid #ccc; /* Light border for inputs */
+  font-size: 16px; /* Font size for inputs */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+input:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* White text for contrast */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for button */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effects */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+a {
+  display: block; /* Block display for full-width links */
+  margin-top: 15px; /* Space above link */
+  text-decoration: none; /* No underline */
+  font-size: 14px; /* Font size for link */
+  color: #007bff; /* Primary color for links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #0056b3; /* Darker blue on hover for links */
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%; /* Responsive width for smaller screens */
+    margin: 50px auto; /* Reduced top margin */
+  }
+
+  h2 {
+    font-size: 24px; /* Adjusted font size for smaller screens */
+  }
+
+  input, button {
+    font-size: 14px; /* Smaller font size for inputs/buttons */
+  }
+}
+
+.sign-up-link {
+  cursor: pointer; /* Pointer cursor for sign-up link */
+  color: #007bff; /* Primary color for link */
+  font-size: 14px; /* Font size for sign-up link */
+  margin-top: 20px; /* Space above the sign-up link */
+  text-align: center; /* Centered text */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.sign-up-link:hover {
+  color: #0056b3; /* Darker blue on hover for sign-up link */
+}

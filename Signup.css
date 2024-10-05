@@ -1,0 +1,108 @@
+/* Styles for the Sign-Up page */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8; /* Softer background for a calming effect */
+}
+
+.signup-box {
+  background-color: #ffffff;
+  border: 2px solid #6c757d; /* Neutral border for subtle elegance */
+  padding: 50px; /* Increased padding for a more spacious feel */
+  border-radius: 20px; /* Softer, more modern border radius */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  width: 380px; /* Slightly smaller width for a compact design */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.signup-box:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.signup-box h2 {
+  font-size: 30px; /* Slightly larger font size */
+  font-weight: 600; /* Reduced weight for a lighter look */
+  color: #343a40; /* Darker color for better contrast */
+  margin-bottom: 25px; /* Slightly reduced margin */
+}
+
+.signup-box input {
+  width: 100%;
+  padding: 16px; /* Increased padding for comfort */
+  margin: 15px 0;
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 10px; /* Softer corners */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.signup-box input:focus {
+  border-color: #28a745; /* Green border color on focus for a fresh feel */
+  outline: none;
+}
+
+.signup-box button {
+  width: 100%;
+  background-color: #28a745; /* Green background for the button */
+  color: white;
+  padding: 16px; /* Increased padding */
+  border: none;
+  border-radius: 10px; /* Softer corners */
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-box button:hover {
+  background-color: #218838; /* Darker green on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.signup-box p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6c757d; /* Neutral text color */
+}
+
+.signup-box a {
+  color: #007bff; /* Bootstrap primary color */
+  text-decoration: none;
+  font-weight: 600; /* Bold text for better readability */
+  transition: color 0.3s ease;
+}
+
+.signup-box a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #dc3545; /* Bootstrap danger color for errors */
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .signup-box {
+    width: 90%; /* Full width for smaller screens */
+    padding: 35px; /* Adjusted padding for mobile */
+  }
+
+  .signup-box h2 {
+    font-size: 26px; /* Adjusted font size for mobile */
+  }
+
+  .signup-box input, .signup-box button {
+    font-size: 15px; /* Adjusted font size for mobile */
+  }
+}
+
+.login-link {
+  cursor: pointer; 
+}

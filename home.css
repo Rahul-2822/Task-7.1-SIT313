@@ -1,0 +1,118 @@
+/* General container styling for the home page */
+.home-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px; /* Avoid content being hidden behind the fixed header */
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4c4c4c;
+  padding: 15px 30px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  border-bottom: 2px solid #007bff; /* Accent color */
+}
+
+/* Logo on the left side */
+header h1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Centered search bar */
+.search-bar {
+  padding: 10px;
+  width: 40%;
+  max-width: 500px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Right-side button container */
+.button-container {
+  display: flex;
+  gap: 15px;
+}
+
+/* Post and login button styles */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-button {
+  background-color: #3328a7;
+  color: white;
+}
+
+.login-button {
+  background-color: #0d00ff;
+  color: white;
+}
+
+button:hover {
+  background-color: #594cdd;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+header h1:hover {
+  color: #007bff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 70%;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  .search-bar {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
